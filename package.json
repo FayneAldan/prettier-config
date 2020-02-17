@@ -1,0 +1,18 @@
+{
+	"name": "prettier-config",
+	"version": "1.0.0",
+	"description": "My personal Prettier config",
+	"main": ".prettierrc.json",
+	"author": "Fayne Aldan",
+	"license": "MIT",
+	"devDependencies": {
+		"husky": "^3.1.0",
+		"prettier": "1.19.1",
+		"pretty-quick": "^2.0.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	}
+}
